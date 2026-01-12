@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bugatti Veyron</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, serif;
+        }
+
+        body{
+            background-color: black;
+            color: white;
+            overflow: hidden;
+        }
+
+        /* Main container */
+        .main{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        /* Background image */
+        .main img.bg{
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        /* BUGATTI text top left */
+        .logo-text{
+            position: absolute;
+            top: 40px;
+            left: 60px;
+            color: red;
+            font-size: 28px;
+            letter-spacing: 3px;
+        }
+
+        /* Menu */
+        .menu{
+            position: absolute;
+            top: 120px;
+            left: 60px;
+            font-size: 18px;
+            color: silver;
+        }
+
+        .menu td{
+            padding-bottom: 18px;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+
+        .menu td:hover{
+            color: white;
+            padding-left: 15px;
+        }
+
+        
+        
+
+        /* Title */
+        .title{
+            position: absolute;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 55px;
+            color: white;
+            letter-spacing: 2px;
+        }
+
+        .title span{
+            color: red;
+        }
+        .title:hover{
+            cursor: pointer;
+            color: silver;
+        }
+
+        /* Bugatti logo right */
+        .logo-img{
+            position: absolute;
+            top: 40px;
+            right: 60px;
+            width: 90px;
+        }
+        .logo-img:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: 0.4s;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="main">
+
+    <!-- Background -->
+    <img class="bg" 
+         src="https://play-lh.googleusercontent.com/yJ0-Z8xkiwugwx22jEfsh5cxeMdehHtfoH_TMcLltgqnfTkTwAZ8pS-DFbyqvj98f6qj=w600-h300-pc0xffffff-pd"  alt="car">
+
+    <!-- Top text -->
+    <div class="logo-text">BUGATTI</div>
+
+    <!-- Menu -->
+    <div class="menu">
+        <table>
+            <tr><td>Home</td></tr>
+            <tr><td>Design</td></tr>
+            <tr><td>Models</td></tr>
+            <tr><td>Racing</td></tr>
+            <tr><td>About</td></tr>
+        </table>
+    </div>
+
+    
+
+    <!-- Title -->
+    <div class="title">
+        Bugatti <span>Veyron</span>
+    </div>
+
+    <!-- Bugatti logo -->
+    <img class="logo-img"
+         src="https://www.pngmart.com/files/22/Bugatti-Logo-PNG.png" alt="car">
+
+
+</div>
+
+</body>
+</html>
